@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="Smart Hire Logo" href="C:\Users\H.A.R\Desktop\FYP\logo.jgp.png">
+    <title>FAQs</title>
+
+    <!-- Bootstrap CSS link (you may need to adjust the version and CDN link) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .faq-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 8px;
+            cursor: pointer;
+            color: #3498db;
+        }
+
+        .answer {
+            display: none;
+        }
+
+        .answer.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/smarthire.html">SmartHire</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/Users/H.A.R/Desktop/FYP%20CODE/About.html" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="file:///C:/Users/H.A.R/Desktop/FYP%20CODE/login.html" target="_blank">Login</a>
+                            <a class="dropdown-item" href="file:///C:/Users/H.A.R/Desktop/FYP%20CODE/signup.html" target="_blank">Signup</a>
+                            <a class="dropdown-item" href="file:///C:/Users/H.A.R/Desktop/FYP%20CODE/contactus.html" target="_blank">Contact Us</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <section class="faq-section">
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(1)">Q: What is Smart Hire??</div>
+            <div class="answer" id="answer1">A: Smart Hire is an innovative hiring platform designed to streamline and simplify the recruitment process.
+                 It leverages advanced technologies to connect employers with qualified candidates efficiently.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(2)">Q: How does Smart Hire work?</div>
+            <div class="answer" id="answer2">A: Smart Hire utilizes a user-friendly interface for both employers and job seekers. Employers can post job openings, review applications, and manage the entire hiring process online. Job seekers can create profiles, apply for positions, and track their application status.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(3)">Q: What sets Smart Hire apart from other job platforms?</div>
+            <div class="answer" id="answer3">A: Smart Hire stands out through its intelligent matching algorithm, which carefully analyzes the skills and preferences of both employers and candidates to make highly relevant and effective job matches.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(4)">Q: Is Smart Hire suitable for small businesses?</div>
+            <div class="answer" id="answer4">A: Absolutely! Smart Hire caters to businesses of all sizes. Whether you're a small startup or a large enterprise, our platform is designed to adapt to your unique hiring needs.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(5)">Q: Can I post multiple job openings on Smart Hire?</div>
+            <div class="answer" id="answer5">A: Yes, employers can post multiple job openings on Smart Hire. Our platform allows you to manage and organize different job listings efficiently.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(6)">Q: What features does Smart Hire offer for job seekers?</div>
+            <div class="answer" id="answer6">A: Job seekers on Smart Hire can create detailed profiles, upload resumes, and receive personalized job recommendations based on their skills and preferences. They can also track the status of their applications and receive notifications about new opportunities.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(7)">Q: How can employers screen and assess candidates on Smart Hire?
+
+            </div>
+            <div class="answer" id="answer7">A: Employers can use Smart Hire's advanced screening tools to review candidate profiles, resumes, and application materials. Additionally, features like pre-screening questions and integrated assessments help in evaluating candidates effectively.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(9)">Q: How do I contact Smart Hire's customer support?</div>
+            <div class="answer" id="answer9">A: For any inquiries or assistance, you can reach our customer support team through our Contact Us page on the website or by sending an email to support@smarthire.com.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(10)">Q: Does Smart Hire prioritize data security and privacy?
+
+            </div>
+            <div class="answer" id="answer10">A: Yes, data security and privacy are top priorities for Smart Hire. We employ industry-standard security measures to safeguard user information and ensure a secure and trustworthy platform.</div>
+        </div>
+
+
+        <!-- Add more FAQ items as needed -->
+    </section>
+
+    
+
+    <!-- Bootstrap JS and Popper.js scripts (you may need to adjust the version and CDN link) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function toggleAnswer(index) {
+            var answer = document.getElementById('answer' + index);
+            answer.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
